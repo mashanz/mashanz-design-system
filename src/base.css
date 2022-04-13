@@ -3,172 +3,197 @@
 @tailwind utilities;
 
 @layer base {
-    body {
-        @apply bg-gray-50;
-    }
+  body {
+    @apply bg-gray-50;
+  }
 
-    h1 {
-        @apply text-5xl;
-    }
-    
-    h2 {
-        @apply text-4xl;
-    }
-    
-    h3 {
-        @apply text-3xl;
-    }
-    
-    h4 {
-        @apply text-2xl;
-    }
-    
-    h5 {
-        @apply text-xl;
-    }
-    
-    h6 {
-        @apply text-lg ;
-    }
+  h1 {
+    @apply text-5xl;
+  }
 
-    input {
-        @apply m-0;
-    }
+  h2 {
+    @apply text-4xl;
+  }
+
+  h3 {
+    @apply text-3xl;
+  }
+
+  h4 {
+    @apply text-2xl;
+  }
+
+  h5 {
+    @apply text-xl;
+  }
+
+  h6 {
+    @apply text-lg;
+  }
+
+  input {
+    @apply m-0;
+  }
 }
 
 @layer components {
-    .btn {
-        @apply py-2 px-4 m-1 rounded;
-        cursor: pointer;
-    }
-    
-    .btn-sm {
-        @apply py-1 px-2 text-sm m-1;
-    }
+  .btn {
+    @apply py-2 px-4 m-1 rounded;
+    cursor: pointer;
+  }
 
-    .btn-group {
-        @apply flex p-0 m-1;
-    }
+  .btn-sm {
+    @apply py-1 px-2 text-sm m-1;
+  }
 
-    .btn-group .btn {
-        @apply m-0 rounded-none;
-    }
-    
-    .btn-primary {
-        @apply bg-blue-500 hover:bg-blue-400 text-white;
-    }
-    
-    .btn-secondary {
-        @apply bg-gray-500 hover:bg-gray-400 text-white;
-    }
-    
-    .btn-danger {
-        @apply bg-red-500 hover:bg-red-400 text-white;
-    }
-    
-    .btn-success {
-        @apply bg-green-500 hover:bg-green-400 text-white;
-    }
-    
-    .btn-warning {
-        @apply bg-yellow-500 hover:bg-yellow-400 text-white;
-    }
-    
-    .btn-info {
-        @apply bg-teal-500 hover:bg-teal-400 text-white;
-    }
-    
-    .btn-light {
-        @apply bg-gray-200 hover:bg-gray-100 text-gray-800;
-    }
-    
-    .btn-dark {
-        @apply bg-gray-800 hover:bg-gray-600 text-white;
-    }
-    
-    .btn-link {
-        @apply text-blue-500 hover:text-blue-400;
-    }
-    
-    .btn-outline-primary {
-        @apply border border-blue-500 hover:border-blue-400 text-blue-500 hover:text-blue-400;
-    }
-    
-    .btn-outline-secondary {
-        @apply border border-gray-500 hover:border-gray-400 text-gray-500 hover:text-gray-400;
-    }
-    
-    .btn-outline-danger {
-        @apply border border-red-500 hover:border-red-400 text-red-500 hover:text-red-400;
-    }
-    
-    .btn-outline-success {
-        @apply border border-green-500 hover:border-green-400 text-green-500 hover:text-green-400;
-    }
-    
-    .btn-outline-warning {
-        @apply border border-yellow-500 hover:border-yellow-400 text-yellow-500 hover:text-yellow-400;
-    }
-    
-    .btn-outline-info {
-        @apply border border-teal-500 hover:border-teal-400 text-teal-500 hover:text-teal-400;
-    }
-    
-    .btn-outline-light {
-        @apply border border-gray-200 hover:border-gray-100 text-gray-800 hover:text-gray-700;
-    }
-    
-    .btn-outline-dark {
-        @apply border border-gray-800 hover:border-gray-600 text-gray-800 hover:text-gray-600;
-    }
+  .btn-group {
+    @apply flex p-0 m-1;
+  }
 
-    .card {
-        @apply bg-white shadow rounded-lg overflow-hidden;
-    }
-    .card .card-header {
-        @apply p-3 border-b font-bold;
-    }
-    .card .card-body {
-        @apply p-3;
-    }
-    .card .card-footer {
-        @apply p-3 border-t bg-gray-100 border-gray-100 text-gray-500;
-    }
-    .card .card-footer .btn {
-        @apply my-0;
-    }
+  .btn-group .btn {
+    @apply m-0 rounded-none;
+  }
 
-    .tag-container {
-        @apply flex flex-wrap gap-1;
-    }
-    .tag {
-        @apply py-1 px-3 rounded-full text-xs font-semibold text-gray-700 bg-gray-200 hover:bg-gray-100;
-    }
-    .input {
-        @apply p-2 rounded-lg border m-1 w-full;
-    }
-    .input-group {
-        @apply flex m-1 w-full;
-    }
-    .input-group .icon-l {
-        @apply bg-gray-200 text-gray-800 p-2 rounded-lg rounded-r-none border border-r-0 px-3 text-center m-0;
-    }
-    .input-group .icon-r {
-        @apply bg-gray-200 text-gray-800 p-2 rounded-lg rounded-l-none border border-l-0 px-3 text-center m-0;
-    }
-    .input-group .input-l-item {
-        @apply p-2 rounded-lg rounded-l-none border border-l-0 m-0 w-full;
-    }
-    .input-group .input-r-item {
-        @apply p-2 rounded-lg rounded-r-none border border-r-0 m-0 w-full;
-    }
-    .input-group .input-x-item {
-        @apply p-2 rounded-lg rounded-r-none rounded-l-none border border-r-0 border-l-0 m-0 w-full;
-    }
-    .input-group .text-r {
-        @apply bg-gray-200 text-gray-800 p-2 rounded-lg rounded-l-none border border-l-0 m-0;
-    }
-    .input-group .text-l {
-        @apply bg-gray-200 text-gray-800 p-2 rounded-lg rounded-r-none border border-r-0 m-0;
-    }
+  .btn-primary {
+    @apply bg-blue-500 hover:bg-blue-400 text-white;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-500 hover:bg-gray-400 text-white;
+  }
+
+  .btn-danger {
+    @apply bg-red-500 hover:bg-red-400 text-white;
+  }
+
+  .btn-success {
+    @apply bg-green-500 hover:bg-green-400 text-white;
+  }
+
+  .btn-warning {
+    @apply bg-yellow-500 hover:bg-yellow-400 text-white;
+  }
+
+  .btn-info {
+    @apply bg-teal-500 hover:bg-teal-400 text-white;
+  }
+
+  .btn-light {
+    @apply bg-gray-200 hover:bg-gray-100 text-gray-800;
+  }
+
+  .btn-dark {
+    @apply bg-gray-800 hover:bg-gray-600 text-white;
+  }
+
+  .btn-link {
+    @apply text-blue-500 hover:text-blue-400;
+  }
+
+  .btn-outline-primary {
+    @apply border border-blue-500 hover:border-blue-400 text-blue-500 hover:text-blue-400;
+  }
+
+  .btn-outline-secondary {
+    @apply border border-gray-500 hover:border-gray-400 text-gray-500 hover:text-gray-400;
+  }
+
+  .btn-outline-danger {
+    @apply border border-red-500 hover:border-red-400 text-red-500 hover:text-red-400;
+  }
+
+  .btn-outline-success {
+    @apply border border-green-500 hover:border-green-400 text-green-500 hover:text-green-400;
+  }
+
+  .btn-outline-warning {
+    @apply border border-yellow-500 hover:border-yellow-400 text-yellow-500 hover:text-yellow-400;
+  }
+
+  .btn-outline-info {
+    @apply border border-teal-500 hover:border-teal-400 text-teal-500 hover:text-teal-400;
+  }
+
+  .btn-outline-light {
+    @apply border border-gray-200 hover:border-gray-100 text-gray-800 hover:text-gray-700;
+  }
+
+  .btn-outline-dark {
+    @apply border border-gray-800 hover:border-gray-600 text-gray-800 hover:text-gray-600;
+  }
+
+  .card {
+    @apply bg-white shadow rounded-lg overflow-hidden;
+  }
+  .card .card-header {
+    @apply p-3 border-b font-bold;
+  }
+  .card .card-body {
+    @apply p-3;
+  }
+  .card .card-footer {
+    @apply p-3 border-t bg-gray-100 border-gray-100 text-gray-500;
+  }
+  .card .card-footer .btn {
+    @apply my-0;
+  }
+
+  .tag-container {
+    @apply flex flex-wrap gap-1;
+  }
+  .tag {
+    @apply py-1 px-3 rounded-full text-xs font-semibold text-gray-700 bg-gray-200 hover:bg-gray-100;
+  }
+  .input {
+    @apply p-2 rounded-lg border m-1 w-full;
+  }
+  .input-group {
+    @apply flex m-1 w-full;
+  }
+  .input-group .icon-l {
+    @apply bg-gray-200 text-gray-800 p-2 rounded-lg rounded-r-none border border-r-0 px-3 text-center m-0;
+  }
+  .input-group .icon-r {
+    @apply bg-gray-200 text-gray-800 p-2 rounded-lg rounded-l-none border border-l-0 px-3 text-center m-0;
+  }
+  .input-group .input-l-item {
+    @apply p-2 rounded-lg rounded-l-none border border-l-0 m-0 w-full;
+  }
+  .input-group .input-r-item {
+    @apply p-2 rounded-lg rounded-r-none border border-r-0 m-0 w-full;
+  }
+  .input-group .input-x-item {
+    @apply p-2 rounded-lg rounded-r-none rounded-l-none border border-r-0 border-l-0 m-0 w-full;
+  }
+  .input-group .text-r {
+    @apply bg-gray-200 text-gray-800 p-2 rounded-lg rounded-l-none border border-l-0 m-0;
+  }
+  .input-group .text-l {
+    @apply bg-gray-200 text-gray-800 p-2 rounded-lg rounded-r-none border border-r-0 m-0;
+  }
+}
+
+.dataTables_wrapper .dataTables_filter input {
+  @apply p-2 rounded-lg border m-1;
+}
+
+.dataTables_wrapper .dataTables_length select {
+  @apply p-2 rounded-lg border m-1;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  @apply py-2 px-4 m-1 bg-gray-200 hover:bg-gray-100 text-gray-800;
+  cursor: pointer;
+  margin: 0;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  background: rgb(59, 130, 246);
+  color: #fff !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background: rgb(107, 114, 128);
+  color: #fff !important;
 }
