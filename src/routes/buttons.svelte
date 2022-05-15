@@ -1,3 +1,7 @@
+<script>
+	import Button from '../components/Button.svelte';
+</script>
+
 <svelte:head>
 	<link
 		rel="stylesheet"
@@ -6,15 +10,15 @@
 </svelte:head>
 
 <main>
-	<button class="btn btn-primary">primary</button>
-	<button class="btn btn-secondary">secondary</button>
-	<button class="btn btn-danger">danger</button>
-	<button class="btn btn-success">success</button>
-	<button class="btn btn-warning">warning</button>
-	<button class="btn btn-info">info</button>
-	<button class="btn btn-light">light</button>
-	<button class="btn btn-dark">dark</button>
-	<button class="btn btn-link">link</button>
+	<Button style="primary" text="Primary" />
+	<Button style="secondary" text="Secondary" />
+	<Button style="danger" text="Danger" />
+	<Button style="success" text="Success" />
+	<Button style="warning" text="Warning" />
+	<Button style="info" text="Info" />
+	<Button style="light" text="Light" />
+	<Button style="dark" text="Dark" />
+	<Button style="link" text="Link" />
 	<button class="btn btn-outline-primary">outline-primary</button>
 	<button class="btn btn-outline-secondary">outline-secondary</button>
 	<button class="btn btn-outline-danger">outline-danger</button>
